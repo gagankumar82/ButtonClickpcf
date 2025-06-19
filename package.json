@@ -1,0 +1,11 @@
+{
+  "name": "button-click-pcf",
+  "version": "1.0.0",
+  "description": "PCF control that renders a button and invokes getwelldata on click",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
