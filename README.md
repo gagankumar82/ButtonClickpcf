@@ -19,3 +19,11 @@ npm run build
 ```
 
 The compiled files will be placed in the `dist` folder.
+lrovcv-codex/create-pcf-control-for-get-well-details-button
+
+The root `controlManifest.input.xml` file describes the control for the
+PowerApps build tools. The `build` script expects `pcf-scripts` to be
+installed. If it is not available the build will fail with `pcf-scripts: not
+found`.
+=======
+ main

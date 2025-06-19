@@ -1,7 +1,11 @@
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 
 export class GetWellDetailsControl implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+
+    private _container!: HTMLDivElement;
+
     private _container: HTMLDivElement;
+
 
     constructor() {}
 
