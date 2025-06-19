@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://schemas.microsoft.com/PowerApps/2020/ControlManifest">
+  <control namespace="GetWellDetails" constructor="GetWellDetailsControl" version="1.0.0">
+    <display-name>GetWellDetails</display-name>
+    <description>Button control that calls getwelldata</description>
+    <resources>
+      <code path="dist/GetWellDetailsControl.js" order="1" />
+      <css path="src/css/GetWellDetails.css" order="2" />
+    </resources>
+  </control>
+</manifest>
