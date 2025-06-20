@@ -7,5 +7,7 @@
       <code path="dist/GetWellDetailsControl.js" order="1" />
       <css path="src/css/GetWellDetails.css" order="2" />
     </resources>
+    <property name="rpc_wellapi" display-name-key="rpc_wellapi" type="SingleLine.Text" usage="bound" />
+    <property name="rpc_wellnumber" display-name-key="rpc_wellnumber" type="SingleLine.Text" usage="bound" />
   </control>
 </manifest>

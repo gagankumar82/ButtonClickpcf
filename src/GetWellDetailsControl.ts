@@ -4,9 +4,6 @@ export class GetWellDetailsControl implements ComponentFramework.StandardControl
 
     private _container!: HTMLDivElement;
 
-    private _container: HTMLDivElement;
-
-
     constructor() {}
 
     public init(
@@ -29,7 +26,9 @@ export class GetWellDetailsControl implements ComponentFramework.StandardControl
             try {
                 const fn = (window as any).getwelldata;
                 if (typeof fn === "function") {
-                    fn();
+                    const wellApi = context.parameters.rpc_wellapi.raw;
+                    const wellNumber = context.parameters.rpc_wellnumber.raw;
+                    fn(wellApi, wellNumber);
                 } else {
                     console.error("getwelldata function is not defined");
                 }
