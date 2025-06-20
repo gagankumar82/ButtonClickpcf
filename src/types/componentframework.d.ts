@@ -3,7 +3,13 @@ declare namespace ComponentFramework {
     [key: string]: any;
   }
 
-  interface Context<TInputs> {}
+  interface Property<T> {
+    raw: T;
+  }
+
+  interface Context<TInputs> {
+    parameters: { [P in keyof TInputs]: Property<TInputs[P]> };
+  }
 
   interface StandardControl<IInputs, IOutputs> {
     init(
