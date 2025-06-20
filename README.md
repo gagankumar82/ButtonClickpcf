@@ -25,3 +25,6 @@ The root `controlManifest.input.xml` file describes the control for the
 PowerApps build tools. The `build` script expects `pcf-scripts` to be
 installed. If it is not available the build will fail with `pcf-scripts: not
 found`.
+
+The manifest uses plain `display-name` attributes for the control properties,
+so no additional localization resources are required.
